@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="grid-container" id="gridContainer">
+        <div class="grid-item shop1" id="gridItem">
+            <img id="shop1Image" src="" alt="Shop 1 Image">
+            <h2 id="shop1H2"></h2>
+            <div class="buttonWrapper">
+                <button id="shop1BTN" onclick="buyBTN()">Buy for: </button>
+            </div>
+        </div>
+
+        <div class="grid-item shop2" id="gridItem">
+            <img id="shop2Image" src="" alt="Shop 2 Image">
+            <h2 id="shop2H2"></h2>
+            <div class="buttonWrapper">
+                <button id="shop2BTN" onclick="buyBTN()">Buy for: </button>
+            </div>
+        </div>
+
+        <div class="grid-item shop3" id="gridItem">
+            <img id="shop3Image" src="" alt="Shop 3 Image">
+            <h2 id="shop3H2"></h2>
+            <div class="buttonWrapper">
+                <button id="shop3BTN" onclick="buyBTN()">Buy for: </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout" id="checkout">
+        <p onclick="exitP()" id="exit" style="cursor: pointer;">X</p>
+        <div class="top-checkout">
+            <img src="https://dl.eltonshop.net/Files/Pictures/%D8%AF%DA%A9%D9%88%D8%B1%20%D8%AF%DB%8C%D8%B3%DA%A9%D9%88%D8%B1%D8%AF.webp" alt="">
+        </div>
+        <p class="p-details">Purchase Details</p>
+        <div id="purchaseDetailShopContainer">
+            <p id="purchaseDetailShopBudnle"></p>
+            <p id="purchaseDetailShopPrice"></p>
+        </div>
+        <button class="confirmBTN">Confirm</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

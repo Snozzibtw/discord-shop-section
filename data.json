@@ -1,0 +1,23 @@
+{
+    "Shop1-Data" : [
+        {
+            "name": "Star Wars Pack!!",
+            "price": "4$",
+            "image": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70050000037364/73b25af8a9aee8785b7ac5d4cd7970a6fe3a3c79bf0b8e6422dcb41efba2962d"
+        }
+    ],
+    "Shop2-Data" : [
+        {
+            "name": "Nature Pack!!",
+            "price": "6$",
+            "image": "https://static.vecteezy.com/system/resources/previews/049/855/259/non_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg"
+        }
+    ],
+    "Shop3-Data" : [
+        {
+            "name": "Sky Pack!!",
+            "price": "2$",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWasj6EqHNAEVq_kWc83erCUuQByNkJKfANA&s"
+        }
+    ]
+}
