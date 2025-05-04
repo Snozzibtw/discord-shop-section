@@ -1,52 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Wars Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    
-    <div class="grid-container" id="gridContainer">
-        <div class="grid-item shop1" id="gridItem">
-            <img id="shop1Image" src="" alt="Shop 1 Image">
-            <h2 id="shop1H2"></h2>
-            <div class="buttonWrapper">
-                <button id="shop1BTN" onclick="buyBTN()">Buy for: </button>
-            </div>
-        </div>
 
-        <div class="grid-item shop2" id="gridItem">
-            <img id="shop2Image" src="" alt="Shop 2 Image">
-            <h2 id="shop2H2"></h2>
+    <div class="section" id="starWarsSection">
+        <h1 style="color: white; text-align: center;">Star Wars</h1>
+        <div class="grid-container" id="gridContainer">
+          <!-- Star Wars Bundle -->
+          <div class="grid-item shop1">
+            <h2 id="itemShopFirstColHeading2"></h2>
+            <img id="itemShopFirstColImage" src="" alt="Shop 1 Image"/>
             <div class="buttonWrapper">
-                <button id="shop2BTN" onclick="buyBTN()">Buy for: </button>
+              <button id="itemShopFirstColButton" class="BUTTONC">Buy for:</button>
             </div>
+          </div>
+      
+          <!-- Hyperspace -->
+          <div class="grid-item shop2">
+            <h2 id="itemShopSecondColHeading2"></h2>
+            <img id="itemShopSecondColImage" src="" alt="Shop 2 Image"/>
+            <div class="buttonWrapper">
+              <button id="itemShopSecondColButton" class="BUTTONC">Buy for:</button>
+            </div>
+          </div>
+      
+          <!-- R2D2 -->
+          <div class="grid-item shop3">
+            <h2 id="itemShopThirdColHeading2"></h2>
+            <img id="itemShopThirdColImage" src="" alt="Shop 3 Image"/>
+            <div class="buttonWrapper">
+              <button id="itemShopThirdColButton" class="BUTTONC">Buy for:</button>
+            </div>
+          </div>
         </div>
+      </div>
+      
+      <!-- New section with a new header -->
+      <div class="section" id="anotherSection">
+        <div class="grid-container">
 
-        <div class="grid-item shop3" id="gridItem">
-            <img id="shop3Image" src="" alt="Shop 3 Image">
-            <h2 id="shop3H2"></h2>
-            <div class="buttonWrapper">
-                <button id="shop3BTN" onclick="buyBTN()">Buy for: </button>
-            </div>
         </div>
+      </div>
+        
+      
+
+  <!-- Checkout Section -->
+  <div class="checkout" id="checkout">
+    <p onclick="exitP()" id="exit" style="cursor: pointer; margin-top: 4px;">X</p>
+    <div class="top-checkout">
+      <img src="https://dl.eltonshop.net/Files/Pictures/%D8%AF%DA%A9%D9%88%D8%B1%20%D8%AF%DB%8C%D8%B3%DA%A9%D9%88%D8%B1%D8%AF.webp" alt="Checkout Image"/>
     </div>
-
-    <div class="checkout" id="checkout">
-        <p onclick="exitP()" id="exit" style="cursor: pointer;">X</p>
-        <div class="top-checkout">
-            <img src="https://dl.eltonshop.net/Files/Pictures/%D8%AF%DA%A9%D9%88%D8%B1%20%D8%AF%DB%8C%D8%B3%DA%A9%D9%88%D8%B1%D8%AF.webp" alt="">
-        </div>
-        <p class="p-details">Purchase Details</p>
-        <div id="purchaseDetailShopContainer">
-            <p id="purchaseDetailShopBudnle"></p>
-            <p id="purchaseDetailShopPrice"></p>
-        </div>
-        <button class="confirmBTN">Confirm</button>
+    <p class="p-details">Purchase Details</p>
+    <div id="purchaseDetailShopContainer">
+      <p id="purchaseDetailShopBudnle"></p>
+      <p id="purchaseDetailShopPrice"></p>
     </div>
+    <div style="margin-left: 1rem; margin-top: 1rem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum officia dolores nesciunt eos, dolor alias voluptates eveniet maiores quae suscipit quasi quia veniam accusamus nihil earum, ipsa enim harum magnam!
+    </div>
+    <div class="button-container">
+    <button id="checkoutConfirmButton" onclick="checkoutConfirmButton()">Confirm</button>
+    </div>
+  </div>
 
-    <script src="index.js"></script>
+  <!-- Thank You -->
+<div id="thankyouPurchase">
+  <p id="thankyouPurchaseParagraph">Thank you for the Purchase!</p>
+  <!-- X Button to close -->
+  <p id="exitButton" style="cursor: pointer;">X</p>
+</div>
+
+
+  <script src="index.js"></script>
 </body>
 </html>

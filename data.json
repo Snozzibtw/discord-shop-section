@@ -1,23 +1,23 @@
 {
-    "Shop1-Data" : [
+    "StarWars-Bundle-Shop" : [
         {
-            "name": "Star Wars Pack!!",
-            "price": "4$",
-            "image": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70050000037364/73b25af8a9aee8785b7ac5d4cd7970a6fe3a3c79bf0b8e6422dcb41efba2962d"
+            "name": "Blue LightSaber Bundle",
+            "price": "25$",
+            "image": "https://kenjosabers.com/cdn/shop/files/GH_2138_800x.jpg?v=1711621111"
         }
     ],
-    "Shop2-Data" : [
+    "StarWars-HyperSpace-Shop" : [
         {
-            "name": "Nature Pack!!",
-            "price": "6$",
-            "image": "https://static.vecteezy.com/system/resources/previews/049/855/259/non_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg"
+            "name": "Enter Hyperspace Bundle",
+            "price": "25$",
+            "image": "https://lumiere-a.akamaihd.net/v1/images/60bf87612ac3f40001081551-image_f4b88dd5.jpeg?region=0%2C0%2C1536%2C864"
         }
     ],
-    "Shop3-Data" : [
+    "StarWars-R2D2-Shop" : [
         {
-            "name": "Sky Pack!!",
-            "price": "2$",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWasj6EqHNAEVq_kWc83erCUuQByNkJKfANA&s"
+            "name": "R2-D2 on Tatooine",
+            "price": "19$",
+            "image": "https://cdn.unifiedcommerce.com/content/product/media/large/079346224180.jpg"
         }
     ]
 }

@@ -4,19 +4,28 @@
     box-sizing: border-box;
 }
 
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 body {
     background: #070709;
+    font-family: "Poppins", sans-serif;
     
 }
 
 #gridContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 400px);
+    gap: 2rem 0rem;
     place-items: center;
     margin-top: 4rem;
-    filter: none;
+    width: 100%;
+    justify-content: center;
 }
+
 
 
 .grid-item {
@@ -30,11 +39,11 @@ body {
     border-radius: 5px;
 }
 
-#shop1Image, 
-#shop2Image, 
-#shop3Image {
+#itemShopFirstColImage,
+#itemShopSecondColImage, 
+#itemShopThirdColImage {
     width: 100%;
-    height: 70%; 
+    height: 80%; 
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -51,7 +60,6 @@ h2 {
 }
 
 .buttonWrapper {
-    
     margin-top: auto;
     display: flex;
     justify-content: center;
@@ -60,8 +68,8 @@ h2 {
     border-bottom-right-radius: 5px;
 }
 
-button {
-    margin: 3rem 1rem;
+.BUTTONC {
+    margin: 2rem 1rem;
     width: 80%;
     height: 2rem;
     background: none;
@@ -91,23 +99,95 @@ button {
 
 .top-checkout img {
     width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
 }
 
 #purchaseDetailShopContainer {
     width: 80%;
     background: grey;
-    height: 3rem;
+    height: fit-content;
     margin-left: 1rem;
-    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
-.confirmBTN {
+#purchaseDetailShopContainer p {
+    margin-left: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4rem;
+    margin-right: 1rem;
+}
+
+#checkoutConfirmButton {
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(47, 255, 47);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+#exit {
+    position: absolute;
+    background-color: black;
+    color: rgb(209, 209, 209);
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    line-height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    text-align: center;
 }
+
+#thankyouPurchase {
+    background-color: white;
+    width: 30%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    display: none;
+}
+
+#thankyouPurchase {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+  
+#exitButton {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+}
+  
+  
